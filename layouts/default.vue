@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Preloader from '~/components/PreLoader.vue';
+import Preloader from '~/components/Preloader.vue';
 
 export default {
     components: {
