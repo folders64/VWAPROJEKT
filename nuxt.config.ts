@@ -1,9 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  /*
-  compatibilityDate: '2024-04-03',
-  devtools: { enabled: true }
-  */
+  devtools: { enabled: true },
+  compatibilityDate: '2024-09-08',
   modules: [
     '@nuxtjs/color-mode',
     '@hypernym/nuxt-gsap',
@@ -11,8 +9,11 @@ export default defineNuxtConfig({
   ],
 
   colorMode: {
+    preference: 'system',
+    fallback: 'dark',
     classSuffix: ''
   },
-
-  compatibilityDate: '2024-09-08'
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind.css'
+  }
 })

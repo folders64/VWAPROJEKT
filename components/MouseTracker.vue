@@ -1,7 +1,11 @@
 <template>
-    <div class="w-[100px] border border-white px-1">
-        <!-- Mouse Tracker content here -->
-        <p>{{ mouseX }} {{ mouseY }}</p>
+    <!--
+    <div class="w-[100px] border border-white px-1 text-center">
+        <p>{{ formattedMouseX }} {{ formattedMouseY }}</p>
+    </div>
+    -->
+    <div>
+        <p>{{ formattedMouseX }} {{ formattedMouseY }}</p>
     </div>
 </template>
 
@@ -12,6 +16,14 @@ export default {
             mouseX: 0,
             mouseY: 0,
         };
+    },
+    computed: {
+        formattedMouseX() {
+            return this.mouseX.toString().padStart(4, '0');
+        },
+        formattedMouseY() {
+            return this.mouseY.toString().padStart(4, '0');
+        }
     },
     methods: {
         updateMousePosition(event) {

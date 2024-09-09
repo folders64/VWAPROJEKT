@@ -2,14 +2,7 @@
   <div>
     <h1>Nuxt Gsap</h1>
     <p>content goes here</p>
+    <img src="../static/images/testcy.png" alt="testimg" class="w-32 h-16 object-cover">
   </div>
-  <StickyFooter />
+  <NuxtLayout />
 </template>
-
-
-<script>
-export default {
-  // Explicitly set the layout if necessary
-  layout: 'default'
-}
-</script>
