@@ -8,8 +8,17 @@
     font-family: 'IBM Plex Mono';
 }
 
+* {
+    cursor: none;
+}
+
 body {
     @apply font-mono;
     color: white;
     background-color: black;
+}
+
+button,
+a {
+    cursor: none;
 }

@@ -1,11 +1,7 @@
+<!-- MouseTracker.vue -->
 <template>
-    <!--
-    <div class="w-[100px] border border-white px-1 text-center">
-        <p>{{ formattedMouseX }} {{ formattedMouseY }}</p>
-    </div>
-    -->
     <div>
-        <p>{{ formattedMouseX }} {{ formattedMouseY }}</p>
+        <p ref="mousePosition">{{ formattedMouseX }} {{ formattedMouseY }}</p>
     </div>
 </template>
 
@@ -39,7 +35,3 @@ export default {
     },
 };
 </script>
-
-<style scoped>
-/* No additional styles needed here */
-</style>
