@@ -29,10 +29,8 @@
 
 <script>
 import gsap from 'gsap';
-import { TextPlugin } from 'gsap/TextPlugin';
+import { TextPlugin } from '../gsap/TextPlugin';
 import MouseTracker from '~/components/MouseTracker.vue';
-
-gsap.registerPlugin(TextPlugin);
 
 export default {
     components: {
@@ -83,7 +81,7 @@ export default {
             // Typewriter effect for copyrightText
             gsap.fromTo(this.$refs.copyrightText,
                 { text: '' },
-                { text: '&copy; 2024 yal b hatin too muh imma log of fo a year', duration: 3, ease: 'power1.out', delay: 3 }
+                { text: '&copy; 2024 yal b hatin too muh imma log of fo a year', duration: 2, ease: 'power1.out', delay: 3 }
             );
 
             // Typewriter effect for mousePosition text
@@ -96,4 +94,5 @@ export default {
         }
     }
 };
+gsap.registerPlugin(TextPlugin);
 </script>
