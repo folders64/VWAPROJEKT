@@ -29,7 +29,7 @@
 
 <script>
 import gsap from 'gsap';
-import { TextPlugin } from '../gsap/TextPlugin';
+import { TextPlugin } from 'gsap/TextPlugin';
 import MouseTracker from '~/components/MouseTracker.vue';
 
 export default {
