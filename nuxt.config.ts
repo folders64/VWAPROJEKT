@@ -16,7 +16,8 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css'
   },
+  /*
   plugins: [
     '~/plugins/gsap.js',
-  ]
+  ]*/
 })
