@@ -25,7 +25,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {
-        'data-comment': '<!-- hey what are you doing here? -->'
+        'data-comment': 'hey what are you doing here?'
       }
     }
   }
