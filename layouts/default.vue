@@ -1,5 +1,5 @@
 <template>
-    <div class="text-white" >
+    <div class="text-white">
         <main>
             <NuxtPage />
         </main>

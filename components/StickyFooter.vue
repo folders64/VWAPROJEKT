@@ -14,11 +14,11 @@
                 </p>
             </div>
 
-            <!-- Copyright Info (centered) -->
+            <!-- Copyright Info (centered)
             <div class="absolute left-1/2 transform -translate-x-1/2 bottom-0 text-center">
                 <p>&copy; 2024 yal b hatin too muh imma log of fo a year</p>
             </div>
-
+            -->
             <!-- Mouse Tracker (right-aligned) -->
             <div class="absolute right-1 bottom-0">
                 <MouseTracker />
