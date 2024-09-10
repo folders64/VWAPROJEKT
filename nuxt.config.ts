@@ -4,6 +4,8 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   devtools: { enabled: true },
   compatibilityDate: '2024-09-08',
+  css: ['~/assets/css/tailwind.css'],
+
   modules: [
     '@nuxtjs/color-mode',
     '@hypernym/nuxt-gsap',

@@ -19,7 +19,7 @@ export default {
     },
     mounted() {
         this.updateCursorPosition({ clientX: window.innerWidth / 2, clientY: window.innerHeight / 2 }); // Center cursor on mount
-        
+
         window.addEventListener("mousemove", this.moveCursor);
         window.addEventListener("mouseenter", this.fadeInCursor);
         window.addEventListener("mouseleave", this.fadeOutCursor);
@@ -28,7 +28,7 @@ export default {
         window.addEventListener("mouseout", this.handleMouseOut);
         window.addEventListener("mouseover", this.handleMouseOver);
         window.addEventListener("mousemove", this.handleMouseMove); // initial cursor position
-        
+
         document.querySelectorAll("*").forEach((element) => {
             element.addEventListener("mouseover", this.checkCursor);
             element.addEventListener("mouseleave", this.resetCursor);
@@ -187,13 +187,15 @@ export default {
     position: fixed;
     width: auto;
     height: auto;
-    color: #fff;
     mix-blend-mode: difference;
     pointer-events: none;
     transform: translate(-50%, -50%);
     z-index: 9999;
     opacity: 1;
     transition: transform 0.1s ease, opacity 0.3s ease;
+}
+.dark-mode .custom-cursor {
+    color: #fff;
 }
 
 .custom-cursor svg {

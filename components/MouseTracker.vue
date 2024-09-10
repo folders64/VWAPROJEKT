@@ -1,7 +1,7 @@
 <!-- MouseTracker.vue -->
 <template>
     <div>
-        <p ref="mousePosition">{{ formattedMouseX }} {{ formattedMouseY }}</p>
+        <p ref="mousePosition">{{ formattedMouseX }}/{{ formattedMouseY }}</p>
     </div>
 </template>
 
