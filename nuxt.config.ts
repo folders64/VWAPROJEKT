@@ -1,6 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { defineNuxtConfig } from 'nuxt/config'
-import type { Manifest } from 'vite'
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
@@ -23,19 +22,10 @@ export default defineNuxtConfig({
     /*'~/plugins/gsap.js',*/
     '~/plugins/touch-detection.js'
   ],
-  hooks: {
-    'vite:extendConfig': (config, { isServer }) => {
-      if (!isServer) {
-        config.plugins = config.plugins || []
-        config.plugins.push({
-          name: 'html-transform',
-          transformIndexHtml(html) {
-            return html.replace(
-              /<!DOCTYPE html>/i,
-              '<!DOCTYPE html>\n<!-- jfhoufhpdbfpaohjfouahsfpiaihsb -->'
-            )
-          },
-        })
+  app: {
+    head: {
+      htmlAttrs: {
+        'data-comment': '<!-- hey what are you doing here? -->'
       }
     }
   }
